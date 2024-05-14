@@ -1,0 +1,522 @@
+
+* {
+   margin: 0;
+   padding: 0;
+  
+   text-decoration: none;
+ }
+
+
+html, body {
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden; 
+ overflow-y: auto;  
+ zoom: 89%;
+}
+
+/* TO EDIT PA TO */
+body {
+ background-image: url('Images/ReviewsBackground.jpg');
+ background-size: 100%;
+ overflow-y: auto;
+ margin: 0;
+ padding: 0;
+ position: relative;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+body::before {
+ content: "";
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.6);
+ z-index: -1;
+}
+/* TO EDIT PA TO */
+
+/* TO EDIT PA TO */
+
+header {
+   position: relative;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   background-color: #2f3334;
+   width: 100%;
+   padding: 0;
+   text-align: center;
+   border-bottom: solid #4e6258;
+   border-top: solid #4e6258;
+   margin: 0;
+}
+
+nav {
+   display: flex;
+   margin: 0;
+   flex-grow: 1;
+   padding: 0;
+   background-color: #2f3334;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   margin-left: 0px;
+}
+
+nav a {
+   display: inline-block;
+   padding: 25px 20px;
+   text-decoration: none;
+   color: white; 
+   border-radius: 1px;
+   text-align: center;
+   font-family: Rowdies;
+   font-size: 16px;
+   transition-duration: 0.4s
+}
+
+nav a:hover {
+   background-color: white; 
+   color: black; 
+}
+
+nav a:active {
+   padding: 25px 20px; 
+   background-color:#a8d290; 
+   color:hsl(0, 100%, 99%); 
+}
+
+#main{
+   padding: 35px; 
+   background-color:#a8d290; 
+   color:hsl(0, 0%, 4%); 
+}
+
+#main:hover{
+   color:rgb(255, 247, 247)
+}
+
+#Logo {
+   margin-left: 22px;
+   margin-right: 11px;
+   margin-top: 0px;
+   margin-bottom: 3px;
+   width: 302px;
+   height: 75px;
+}
+
+/* HEADER END */
+
+
+.review-container {
+ max-width: 1300px;
+ margin: 50px auto;
+ padding: 30px 50px;
+ background-color: #2F3334;
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ color: #a8d290;
+ z-index: 3;
+ border: solid 3px;
+ justify-content: center;
+ align-items: center;
+}
+
+h1, h2 {
+ text-align: center;
+}
+
+.review-form {
+ margin-bottom: 20px;
+}
+
+select{
+   max-width: 320px;
+}
+
+.form-input {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid #E7C69E;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin: 10px
+}
+.form-input-textarea {
+ height: 100px;
+ resize: none;
+}
+.submit-btn {
+ background-color:#83c7a5;
+ color:#000000;
+ border: none;
+ padding: 10px 20px;
+ font-size: 26px;
+ border-radius: 4px;
+ cursor: pointer;
+ margin-right: 180px;
+}
+
+
+
+.review-list {
+ margin-top: 20px;
+ color: #E7C69E;
+ 
+}
+.review {
+ margin-bottom: 20px;
+ padding: 10px;
+ border: 1px solid #a8d290;
+ border-radius: 4px;
+ position: relative;
+ 
+}
+.reviewer-name {
+ font-weight: bold;
+ color: #f0e9e9;
+ margin-bottom: 5px;
+ border:#f39c12;
+ padding: 10px 20px;
+ font-size: 16px;
+ border-radius: 4px;
+ 
+}
+.review-date {
+ color: #ffffff;
+ font-size: 12px;
+ margin-bottom: 5px;
+}
+
+.stars {
+ color: #f39c12;
+ position: absolute;
+ top: 0;
+ right: 10px;
+}
+
+.review-label
+{
+   color: rgb(0, 0, 0);
+   background-color: #b4c6a9;
+   padding: 10px;
+   border: solid black;
+   border-radius: 15px;
+   font-size: 60px;
+   cursor: default;
+   max-width: 1090px;
+   margin: 5px auto;
+   margin-bottom: 20px;
+   font-family: Ubuntu;
+   font-size: 70px;
+}
+
+.form-input, .form-input-textarea, option
+{
+   font-family: Ubuntu;
+   font-size: 22px;
+}
+
+label
+{
+   color: rgb(0, 0, 0);
+   background-color: #b4c6a9;
+   padding: 10px;
+   border: solid black;
+   border-radius: 10px;
+   margin: 10px 10px;
+   font-family: Ubuntu;
+   font-size: 30px;
+}
+
+ .stars, .review-date
+{
+   font-family: Rowdies;
+   font-size: 25px;
+   margin: 10px;
+}
+
+.review-date{
+   text-decoration: underline;
+}
+.reviewer-name
+{
+   font-family: Ubuntu;
+   font-size: 25px;  
+   margin: 10px -10px;
+}
+ 
+.text
+{
+   font-family: Ubuntu;
+   font-size: 20px;  
+   margin: 10px;
+}
+
+.stars
+{
+   font-size: 35px;
+   margin: 20px 16px;
+}
+
+.submit-btn
+{
+   color: rgb(0, 0, 0);
+   background-color: #718a61;
+   padding: 10px;
+   border: solid black;
+   border-radius: 10px;
+   margin-left: 540px;
+   font-family: Rowdies;
+   font-size: 30px;
+   transition-duration: 0.3s;
+}
+
+.submit-btn:hover
+{
+filter: brightness(140%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer-distributed {
+ background-image:url('Images/backgroundmotif.png');
+ background-position: center;
+ position: relative;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+ text-align: left;
+ font: bold 16px sans-serif;
+ padding: 35px 40px;
+ border-top:solid #54585b 5px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+ display: inline-block;
+ vertical-align: top;
+}
+
+/* LEFT SECTION NG FOOTER */
+
+.footer-distributed .footer-left{
+ width: 37%;
+ align-items: center
+}
+
+/* RIDGESIDE RESORT LOGO FOOTER */
+
+#WebsiteFooter{
+ width: 400px;
+ margin: 0;
+ margin-right: 10px;
+}
+/* Quick Navigation */
+
+.footer-links {
+ color: #ffffff;
+ margin: 20px 0 12px;
+ padding: 0;
+}
+
+
+.footer-links a {
+ display: inline-block;
+ line-height: 1.8;
+ font-weight: 400;
+ text-decoration: none;
+ color: inherit;
+ transition-duration: 0.4s;
+}
+
+
+.footer-links a:hover {
+ color: #5bc438;
+}
+
+
+.quicknavi {
+ color: #2aa962;
+ font-size: 19px;
+ font-weight: normal;
+ margin: 0;
+}
+/* Footer Center */
+
+.footer-center {
+ width: 35%;
+ margin-left: 60px;
+}
+
+
+.footer-center i {
+ background-color: #33383b;
+ color: #ffffff;
+ font-size: 25px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 42px;
+ margin: 10px 15px;
+ vertical-align: middle;
+}
+
+
+.footer-center i.email {
+ font-size: 24px;
+ line-height: 38px;
+}
+
+
+.footer-center p {
+ display: inline-block;
+ color: #ffffff;
+ font-weight: 400;
+ vertical-align: middle;
+ margin: 0;
+}
+
+
+.footer-center p span {
+ display: block;
+ font-weight: normal;
+ font-size: 19px;
+ line-height: 2;
+}
+
+
+.footer-center p a {
+ color: lightseagreen;
+ text-decoration: none;
+}
+
+
+.footer-links a:before {
+ content: "|";
+ font-weight: 300;
+ font-size: 20px;
+ left: 0;
+ color: #fff;
+ display: inline-block;
+ padding-right: 5px;
+}
+
+
+.footer-icons {
+ margin-top: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 26px;
+}
+/* Footer Right */
+
+.footer-right{
+ width: 20%;
+}
+
+.about{
+ line-height: 20px;
+ color:  #92999f;
+ font-size: 16px;
+ font-weight: normal;
+ margin: 0;
+}
+
+.about span{
+ display: block;
+ color:  #ffffff;
+ font-size: 19px;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+.footer-icons {
+ margin-top: 25px;
+ display: flex;
+ justify-content: left;
+}
+
+
+.footer-icons a {
+ display: inline-block;
+ width: 65px;
+ height: 65px;
+ cursor: pointer;
+ background-color: #98cfb9;
+ border-radius: 5px;
+ text-align: center;
+ line-height: 35px;
+ margin-right: 3px;
+ margin-bottom: 5px;
+ padding: 5px;
+}
+
+
+.footer-icons img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+/* FOOTER END */
+
+
+
+.survey {
+   display: block;
+   margin: 0 auto;
+   border: 5px solid black; 
+   width: 30%;
+}
+
+.review-container2{
+   max-width: 1300px;
+ margin: 50px auto;
+ padding: 30px 50px;
+ background-color: #2F3334;
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ color: #a8d290;
+ z-index: 3;
+ border: solid 3px;
+ justify-content: center;
+ align-items: center;
+}
+
+.footer-icons a
+{
+cursor:pointer;
+transition-duration: 0.3s;
+}
+
+.footer-icons a:hover
+{
+   filter: brightness(130%);
+}

@@ -1,0 +1,419 @@
+/* ########################################### */
+/*                 Global                      */
+/* ########################################### */
+*{
+    box-sizing: border-box;
+}
+
+body{
+ zoom: 90%;
+}
+html{
+    font-size: 14px;
+    font-family: Ubuntu;
+    background-image:url('Images/forum_background.jpg');
+    color:#ffffff;
+    font-size: 20px;
+}
+
+a{
+    color:#00ff00;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size:16px;
+    font-weight: bolder;
+}
+
+/* ########################################### */
+/*            detail.html                      */
+/* ########################################### */
+
+.head{
+    display: flex;
+    background-color: #2f3334;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    border: solid rgb(95, 91, 91) 5px;
+    text-decoration: none;
+}
+
+.authors{
+    flex: 20%;
+}
+
+.content{
+    flex: 80%;
+}
+
+.body{
+    display: flex;
+    background-color: #2f3334;
+    padding: 20px;
+    margin-top: 5px;
+    border: solid rgb(72, 72, 72) 5px;
+}
+
+body::before {
+ content: " ";      
+ position: fixed;        
+ top: 0;        
+ right: 0;        
+ bottom: 0;      
+ left: 0;      
+ background-color: black;       
+ opacity: 0.5;      
+ z-index: -1;
+}
+
+.body .authors .username{
+    font-size: 20px;
+}
+
+.body .authors img{
+    max-width: 50px;
+    max-height: 80px;
+    border: solid black 5px;
+}
+
+.body .content .comment button{
+    border:none;
+    padding:10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px #baaeae;
+    cursor: pointer;
+    float: right;
+    
+}
+
+.forumpic{
+    max-width: 1200px;
+    max-height: 500px;
+    border: solid #cccccc 3px;
+    margin: 5px;
+}
+
+.back
+{
+    cursor:pointer;
+    background-color:#2aa962;
+    padding: 15px;
+    color:black;
+    border: solid black 3px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+
+.back:hover
+{
+    cursor:pointer;
+    background-color:#90d6b3;
+    padding: 15px;
+    color:rgb(255, 255, 255);
+    border: solid rgb(213, 235, 177) 3px;
+    border-radius: 20px;
+}
+
+/* comment section */
+.comment-area{
+    margin-bottom:20px;
+}
+
+.comment-area textarea{
+    width: 90%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+    border: solid rgb(222, 222, 222) 8px;
+}
+
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment-area input:hover{
+    border: solid 1px #7de796;
+}
+
+input
+{
+background-color:rgb(252, 232, 121);
+font-size: 15px;
+font-weight: bolder;
+margin-right:15px;
+max-width: 230px;
+margin-top: 25px;
+height: 60px;
+width:100px;
+}
+
+button
+{
+ font-size: 20px;
+ margin-right:15px;
+}
+
+
+
+header {
+ position: relative;
+ z-index: 2;
+ display: flex;
+ align-items: center;
+ background-color: #2f3334;
+ width: 100%;
+ padding: 0;
+ text-align: center;
+ border-bottom: solid #4e6258;
+ border-top: solid #4e6258;
+ margin: 0;
+}
+
+nav {
+ display: flex;
+ margin: 0;
+ flex-grow: 1;
+ padding: 0;
+ background-color: #2f3334;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ margin-left: 0px;
+}
+
+nav a {
+ display: inline-block;
+ padding: 25px 20px;
+ text-decoration: none;
+ color: white; 
+ border-radius: 1px;
+ text-align: center;
+ font-family: Rowdies;
+ font-size: 16px;
+ transition-duration: 0.4s
+}
+
+nav a:hover {
+ background-color: white; 
+ color: black; 
+}
+
+nav a:active {
+ padding: 25px 20px; 
+ background-color:#a8d290; 
+ color:hsl(0, 100%, 99%); 
+}
+
+
+#Logo {
+ margin-left: 22px;
+ margin-right: 11px;
+ margin-top: 0px;
+ margin-bottom: 3px;
+ width: 302px;
+ height: 75px;
+}
+
+.footer-distributed {
+ background-image:url('Images/backgroundmotif.png');
+ background-position: center;
+ position: relative;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+ text-align: left;
+ font: bold 16px sans-serif;
+ padding: 35px 40px;
+ border-top:solid #54585b 5px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+ display: inline-block;
+ vertical-align: top;
+}
+
+/* LEFT SECTION NG FOOTER */
+
+.footer-distributed .footer-left{
+ width: 37%;
+ align-items: center
+}
+
+/* RIDGESIDE RESORT LOGO FOOTER */
+
+#WebsiteFooter{
+ width: 400px;
+ margin: 0;
+ margin-right: 10px;
+}
+/* Quick Navigation */
+
+.footer-links {
+ color: #ffffff;
+ margin: 20px 0 12px;
+ padding: 0;
+}
+
+
+.footer-links a {
+ display: inline-block;
+ line-height: 1.8;
+ font-weight: 400;
+ text-decoration: none;
+ color: inherit;
+ transition-duration: 0.4s;
+}
+
+
+.footer-links a:hover {
+ color: #5bc438;
+}
+
+
+.quicknavi {
+ color: #2aa962;
+ font-size: 19px;
+ font-weight: normal;
+ margin: 0;
+}
+/* Footer Center */
+
+.footer-center {
+ width: 35%;
+ margin-left: 60px;
+}
+
+
+.footer-center i {
+ background-color: #33383b;
+ color: #ffffff;
+ font-size: 25px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 42px;
+ margin: 10px 15px;
+ vertical-align: middle;
+}
+
+
+.footer-center i.email {
+ font-size: 24px;
+ line-height: 38px;
+}
+
+
+.footer-center p {
+ display: inline-block;
+ color: #ffffff;
+ font-weight: 400;
+ vertical-align: middle;
+ margin: 0;
+}
+
+
+.footer-center p span {
+ display: block;
+ font-weight: normal;
+ font-size: 19px;
+ line-height: 2;
+}
+
+
+.footer-center p a {
+ color: lightseagreen;
+ text-decoration: none;
+}
+
+
+.footer-links a:before {
+ content: "|";
+ font-weight: 300;
+ font-size: 20px;
+ left: 0;
+ color: #fff;
+ display: inline-block;
+ padding-right: 5px;
+}
+
+
+.footer-icons {
+ margin-top: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 26px;
+}
+/* Footer Right */
+
+.footer-right{
+ width: 20%;
+}
+
+.about{
+ line-height: 20px;
+ color:  #92999f;
+ font-size: 16px;
+ font-weight: normal;
+ margin: 0;
+}
+
+.about span{
+ display: block;
+ color:  #ffffff;
+ font-size: 19px;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+.footer-icons {
+ margin-top: 25px;
+ display: flex;
+ justify-content: left;
+}
+
+
+.footer-icons a {
+ display: inline-block;
+ width: 65px;
+ height: 65px;
+ cursor: pointer;
+ background-color: #98cfb9;
+ border-radius: 5px;
+ text-align: center;
+ line-height: 35px;
+ margin-right: 3px;
+ margin-bottom: 5px;
+ padding: 5px;
+}
+
+
+.footer-icons img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+/* FOOTER END */
+
+
+.link{
+    transition-duration: 0.3s;
+}
+.link:hover
+{
+    filter: brightness(70%);
+}
+

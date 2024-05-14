@@ -1,0 +1,573 @@
+
+
+html, body {
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden; 
+ overflow-y: auto;  
+ zoom: 89%;
+}
+
+/* TO EDIT PA TO */
+body {
+ background-image: url('Images/AboutUs Images/Nature-Watterfall.gif');
+ background-size: 100%;
+ overflow-y: auto;
+ margin: 0;
+ padding: 0;
+ position: relative;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+body::before {
+   content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 0;
+  }
+
+
+/* TO EDIT PA TO */
+
+/* TO EDIT PA TO */
+
+header {
+   position: relative;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   background-color: #2f3334;
+   width: 100%;
+   padding: 0;
+   text-align: center;
+   border-bottom: solid #4e6258;
+   border-top: solid #4e6258;
+   margin: 0;
+}
+
+nav {
+   display: flex;
+   margin: 0;
+   flex-grow: 1;
+   padding: 0;
+   background-color: #2f3334;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   margin-left: 0px;
+}
+
+nav a {
+   display: inline-block;
+   padding: 25px 20px;
+   text-decoration: none;
+   color: white; 
+   border-radius: 1px;
+   text-align: center;
+   font-family: Rowdies;
+   font-size: 16px;
+   transition-duration: 0.4s
+}
+
+nav a:hover {
+   background-color: white; 
+   color: black; 
+}
+
+nav a:active {
+   padding: 25px 20px; 
+   background-color:#a8d290; 
+   color:hsl(0, 100%, 99%); 
+}
+
+#main{
+   padding: 35px; 
+   background-color:#a8d290; 
+   color:hsl(0, 0%, 4%); 
+}
+
+#main:hover{
+   color:rgb(255, 247, 247)
+}
+
+#Logo {
+   margin-left: 22px;
+   margin-right: 11px;
+   margin-top: 3px;
+   margin-bottom: 8px;
+   width: 302px;
+   height: 76px;
+}
+
+/* HEADER END */
+
+
+.about-section-wrapper
+{
+  display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin:15px auto;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: bottom;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+    padding: 25px;
+    background-color: #2f3334;
+}
+
+.ridgeside-intro
+{
+background-image: url('Images/aboutus-background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+margin: 25px;
+border: solid rgb(174, 173, 173);
+border-width: 5px;
+padding: 20px;
+width: 92%;
+}
+
+.basta
+{
+   color: white;
+    text-align: center;
+    font-size: 55px;
+    font-family: Ubuntu;
+    margin: auto 250px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #4a5951;
+    padding:25px;
+    max-width: 1030px;
+    border: solid #787a79;
+    border-radius:20px;
+}
+
+.ridgeside-img {
+   max-width: 800px;
+   max-height: 500px;
+   margin: 0 auto; 
+   display: block;
+   border: solid darkgreen;
+   border-width: 5px;
+}
+
+.ridgeside {
+   width: 320px;
+   height: 250px;
+   object-fit: cover; 
+   border: solid darkgreen;
+   border-width: 5px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    margin:10px;  
+}
+
+.content {
+    display: block;
+    margin: 50px 80px;
+    font-size: larger;
+    font-family: Ubuntu;
+    font-weight: bold;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+}
+
+h3
+{
+   text-align: center;
+   font-family:Rowdies;
+   font-size: 55px;
+   margin: 5px auto;
+   background-color: #bdeaa1;
+   max-width: 700px;
+   padding: 15px;
+   border: solid 5px darkgreen;
+   border-radius:15px;
+
+}
+
+li 
+{
+   display: block;
+   margin: 40px 10px;
+   font-size: larger;
+   font-family: Ubuntu;
+   font-weight: bold;
+   flex-direction: column;
+   font-size: 28px;
+   list-style-type: disc;
+}
+
+figcaption
+{
+   font-weight: bolder;
+   font-size: 23px;
+   margin: 15px 0px;
+   font-family: Ubuntu;
+   font-size: 25px;
+   text-align: center;
+   font-weight: bold;
+   background-color: 
+   #d6c5a6;
+   padding:5px;
+   border: solid black 3px;
+   border-radius:6px;
+}
+
+.list-captions {
+   display: block;
+   margin: 20px 10px;
+   font-size: larger;
+   font-family: Ubuntu;
+   font-weight: bold;
+   flex-direction: column;
+   font-size: 23px;
+   list-style-type: disc;
+   text-align: left; 
+}
+
+.button-label
+{
+  color: rgb(0, 0, 0);
+    background-color: #7e9c6b;
+    padding: 20px;
+    border: solid rgb(0, 0, 0);
+    border-radius: 15px;
+    border-width:5px;
+    font-size: 40px;
+    cursor: default;
+    max-width: 1890px;
+    margin: 5px;
+    transition-duration: 0.3s;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.button-label:hover
+{
+filter: brightness(150%);
+color:white;
+}
+
+
+/*FOOTER*/
+.footer-distributed {
+ background-image:url('Images/backgroundmotif.png');
+ background-position: center;
+ position: relative;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+ text-align: left;
+ font: bold 16px sans-serif;
+ padding: 35px 40px;
+ border-top:solid #54585b 5px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+ display: inline-block;
+ vertical-align: top;
+}
+
+/* LEFT SECTION NG FOOTER */
+
+.footer-distributed .footer-left{
+ width: 37%;
+ align-items: center
+}
+
+/* RIDGESIDE RESORT LOGO FOOTER */
+
+#WebsiteFooter{
+ width: 400px;
+ margin: 0;
+ margin-right: 10px;
+}
+/* Quick Navigation */
+
+.footer-links {
+ color: #ffffff;
+ margin: 20px 0 12px;
+ padding: 0;
+}
+
+
+.footer-links a {
+ display: inline-block;
+ line-height: 1.8;
+ font-weight: 400;
+ text-decoration: none;
+ color: inherit;
+ transition-duration: 0.4s;
+}
+
+
+.footer-links a:hover {
+ color: #5bc438;
+}
+
+
+.quicknavi {
+ color: #2aa962;
+ font-size: 19px;
+ font-weight: normal;
+ margin: 0;
+}
+/* Footer Center */
+
+.footer-center {
+ width: 35%;
+ margin-left: 65px;
+}
+
+
+.footer-center i {
+ background-color: #33383b;
+ color: #ffffff;
+ font-size: 25px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 42px;
+ margin: 10px 15px;
+ vertical-align: middle;
+}
+
+
+.footer-center i.email {
+ font-size: 24px;
+ line-height: 38px;
+}
+
+
+.footer-center p {
+ display: inline-block;
+ color: #ffffff;
+ font-weight: 400;
+ vertical-align: middle;
+ margin: 0;
+}
+
+
+.footer-center p span {
+ display: block;
+ font-weight: normal;
+ font-size: 19px;
+ line-height: 2;
+}
+
+
+.footer-center p a {
+ color: lightseagreen;
+ text-decoration: none;
+}
+
+
+.footer-links a:before {
+ content: "|";
+ font-weight: 300;
+ font-size: 20px;
+ left: 0;
+ color: #fff;
+ display: inline-block;
+ padding-right: 5px;
+}
+
+
+.footer-icons {
+ margin-top: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 26px;
+}
+/* Footer Right */
+
+.footer-right{
+ width: 20%;
+}
+
+.about{
+ line-height: 20px;
+ color:  #92999f;
+ font-size: 16px;
+ font-weight: normal;
+ margin: 0;
+}
+
+.about span{
+ display: block;
+ color:  #ffffff;
+ font-size: 19px;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+.footer-icons {
+ margin-top: 25px;
+ display: flex;
+ justify-content: left;
+}
+
+
+.footer-icons a {
+ display: inline-block;
+ width: 65px;
+ height: 65px;
+ cursor: pointer;
+ background-color: #98cfb9;
+ border-radius: 5px;
+ text-align: center;
+ line-height: 35px;
+ margin-right: 3px;
+ margin-bottom: 5px;
+ padding: 5px;
+}
+
+
+.footer-icons img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+/* FOOTER END */
+
+
+.Profile-container{
+   width:100%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+
+}
+
+.Profile-card{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   background-color:rgb(96, 156, 96);
+   border-radius: 10px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   margin: 20px;
+   width: 350px;
+   height: 390px;
+   border: solid darkgreen 5px;
+   cursor: pointer;
+   transition-duration:0.3s;
+}
+.Profile-card:hover{
+   transform: translateY(-5px);
+   background-color:rgb(154, 203, 158);
+}
+.Profile-img{
+  overflow: hidden;
+   border-radius: 10px;
+   height:250px;
+  margin-bottom: 2px;
+  margin-top:10px;
+  border: solid darkgreen 3px;
+}
+.Profile-img img{
+   height: 270px;
+   width: 270px;
+}
+.Profile-info h4{
+   font-size: 25px;
+   text-align: center;
+   font-family: Rowdies;
+   font-weight: bold;
+   background-color:
+   #a8d6a6 ;
+   padding:5px 10px;
+   border: solid black 3px;
+   border-radius:6px;
+   text-decoration: none;
+   color: black;
+}
+
+
+.bastu {
+   color: white;
+   font-size: 30px;
+   font-family: Ubuntu;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   background-color: #393f3c;
+   padding: 15px;
+   max-width: 200px;
+   border: solid #787a79;
+   border-radius: 15px;
+   text-align: center;
+   margin:20px 45px;
+}
+
+.list-cap {
+   font-size: larger;
+   font-family: Ubuntu;
+   font-weight: bold;
+   font-size: 20px;
+   text-align: left !important;
+   color: white;
+   margin: 15px 45px;
+}
+
+.rapport {
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-items: fl;
+   width: 100%;
+   max-width: 1450px;
+   margin: 15px auto;
+   margin-top: 30px;
+   background-size: cover;
+   background-position: bottom;
+   border: solid;
+   border-width: 5px;
+   border-color: rgb(0, 0, 0);
+   padding: 2px;
+   background-color: #2f3334;
+   text-align: left;
+   margin:right
+}
+.footer-icons a
+{
+cursor:pointer;
+transition-duration: 0.3s;
+}
+
+.footer-icons a:hover
+{
+   filter: brightness(130%);
+}

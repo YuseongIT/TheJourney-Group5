@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Design.css">
+    <link rel="icon" type="image/x-icon" href="Images/Ridgeside_Icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="Function.js"></script>
+    <title>Locations</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="Logo" src="Images/RidgesideHeaderLogo.png" alt="Website Icon">
+        </div>
+        <nav>
+            <a style="padding: 35px;padding-top: 35px; padding-bottom: 35px" href="index.html">HOME</a>
+            <a id="main" style="padding-top: 35px; padding-bottom: 36px" href="Locations.html">LOCATIONS</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="RulesAndReg.html">RULES AND REGULATIONS</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="Community.html">COMMUNITY</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="Reviews.html">REVIEWS</a>
+            <a style="padding-top: 35px; padding-bottom: 36px" href="AboutUs.html">ABOUT US</a>
+        </nav>
+    </header>
+
+    <content>
+        <div class="video-background-with-play-button">
+            <video src="LocationsImages/BG-Video.mp4" alt="Background Video" autoplay loop muted></video>
+            <div class="centered-text">
+                <h1 style="font-size: 120px; text-shadow: 3px 3px 3px rgb(78, 130, 114);">
+                    Welcome To The Journey
+                  </h1>
+                  <br>
+                  <p style="font-size: 40px; text-shadow: 3px 3px 3px rgb(78, 130, 114);">
+                    A Place Where Affordability Meets Adventure!
+                  </p>
+            </div>              
+        </div>          
+        <div class="background-picture">
+            <div class="container">
+                <div class="location-container">
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/ThePark.jpg" alt="The Park" class="location-image">
+                        <span class="location-text">The Park</span>
+                        <div class="location-info hidden">
+                            <p>Escape to The Park-Silang, where tranquility meets luxury. Nestled between Tagaytay and Laguna, our pet-friendly hotel offers dream venues and glamping redefined. Unplug and recharge with us today!</p>
+                            <br>
+                            <a href="#" class="back-button" onclick="goBack(this)">Back</a>
+                        </div>
+                        <div id="googleMapWaterpark" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247522.27624895054!2d120.7262062!3d14.2219509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7ddb3e9db27f%3A0xd7f7a1cc13d9cc3e!2sThe%20Park%20-%20Silang!5e0!3m2!1sen!2sph!4v1715616061446!5m2!1sen!2sph"
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Domescape.jpg" alt="The Domescape" class="location-image">
+                        <span class="location-text">Domescape Glamping</span>
+                        <div class="location-info hidden">
+                            <p>Experience a slice of paradise at DOMESCAPE, Philippines' premier family vacation domes. Embrace nature's beauty without compromising luxury. Your adventure awaits in our geodesic domes.</p>
+                            <br>
+                            <a href="#" class="back-button" onclick="goBack(this)">Back</a>
+                        </div>
+                        <div id="googleMapSwimmingPool" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.9408454589056!2d120.71503960000001!3d14.080669299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd9b6b489880b5%3A0xbb64347848a0821c!2sDomescape!5e0!3m2!1sen!2sph!4v1715616218541!5m2!1sen!2sph"
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Tyvo.jpg" alt="The Tyvo Resort" class="location-image">
+                        <span class="location-text">Tyvo Resort</span>
+                        <div class="location-info hidden">
+                            <p>Tyvo Resort: Where exclusivity meets celebration. Host your dream events with a stunning Metro Manila skyline backdrop. Swim, celebrate, and create memories with us!</p>
+                            <br>
+                            <a href="#" class="back-button" onclick="goBack(this)">Back</a>
+                        </div>
+                        <div id="googleMapCottage" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.385168817299!2d121.162015!3d14.577115000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c756bf7f8b97%3A0x7b372a808f8e62f!2sTyvo%20Overlooking%20Events%20Place%20%26%20Private%20Resort!5e0!3m2!1sen!2sph!4v1715616270505!5m2!1sen!2sph" 
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Hideaway.jpg" alt="The Tanay Hideaway" class="location-image">
+                        <span class="location-text">Tanay Hideaway</span>
+                        <div class="location-info hidden">
+                            <p>Discover serenity at Tanay Hideaway. Embrace nature's embrace in our secluded villas amidst lush landscapes and stunning mountain vistas. Adventure awaits beyond every corner.</p>
+                            <br>
+                            <a href="#" class="back-button" onclick="goBack(this)">Back</a>
+                        </div>
+                        <div id="googleMapLocalFarm" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6540025875174!2d121.4554215!3d14.561768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33978d678da969b7%3A0xac16deabd5ba5bd6!2sTanay%20Hideaway!5e0!3m2!1sen!2sph!4v1715616336545!5m2!1sen!2sph"
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Lakehouse.jpg" alt="The Lakehouse" class="location-image">
+                        <span class="location-text">Lake House at Caliraya</span>
+                        <div class="location-info hidden">
+                            <p>Escape to The Lake House, where memories bloom amidst Caliraya's forested shores. Reconnect with nature and loved ones in our eco-friendly haven. Your serene getaway awaits.</p>
+                            <br>
+                            <a href="#" class="back-button" onclick="goBack(this)">Back</a>
+                        </div>
+                        <div id="googleMapWaterfall" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.108198753819!2d121.52863907510046!3d14.305145586146928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397fbddd78be2e7%3A0x3e8ebc664165d9b6!2sThe%20Lake%20House!5e0!3m2!1sen!2sph!4v1715616379929!5m2!1sen!2sph"
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="location" onclick="toggleLocation(this)">
+                        <img src="LocationsImages/Anilao.jpg" alt="The Anilao" class="location-image">
+                        <span class="location-text">Anilao Awari Bay Resort</span>
+                        <div class="location-info hidden">
+                            <p>Escape to Anilao Awari Bay: Your tranquil beach retreat in Batangas. Dive into relaxation just a few hours from the city hustle. Experience serenity and adventure with us.</p>
+                            <br>
+                            <a href="#" class="back-button" onclick="goBack(this)">Back</a>
+                        </div>
+                        <div id="googleMapRestaurant" class="google-map hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.4023625101167!2d120.9087596!3d13.7545924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd079d701abcf9%3A0x75673ddd6924d5e1!2sAnilao%20Awari%20Bay!5e0!3m2!1sen!2sph!4v1715616416256!5m2!1sen!2sph"
+                            width="650" height="500" style="border:3px solid black;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </content>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img id="WebsiteFooter" src="Images/RidgesideFooterLogo.png">
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="Locations.html">Locations</a>
+                <a href="RulesAndReg.html">Rules and Regulations</a>
+                <a href="Community.html">Community Board</a>
+                <a href="Reviews.html">Reviews</a>
+                <a href="AboutUs.html">About Us</a>
+            </p>
+            <p class="quicknavi">Quick Navigation</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="location"></i>
+                <p><span>Technological Institute of the Philippines</span> Manila City, Philippines</p>
+            </div>
+            <div>
+                <i class="phone"></i>
+                <p>+63 920 464 5310</p>
+            </div>
+            <div>
+                <i class="email"></i>
+                <p><a href="index.html" target="_blank" style="font-weight: bold;">@thejourneyph.com</a></p>
+            </div>
+            <div class="footer-icons">
+                <a href="https://facebook.com" target="_blank"><img src="Images/Facebook.png"></a>
+                <a href="https://www.x.com" target="_blank"><img src="Images/TwitterLogo.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Images/InstagramLogo.png"></a>
+                <a href="https://youtube.com" target="_blank"><img src="Images/YoutubeLogo.png"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+ 
+            <p class="about">
+              <span>About The Journey Website</span>
+              This website was created as a Finals project for the Human Computer Interaction (HCI) course by students of IT12S1 - 
+              John Ivan Roxas, Nikolai Ng, Daniel Espela, Gabriel Jelo Galang, and Clark Guin Barrientos. </p> <br> 
+         
+            <p style="color:  #92999f; font-size: 15px; font-weight: lighter;">This website serves solely as a demonstration of our interface design skills and to inform people about the available resorts in the Philippines.</p>
+         
+          </div>
+    </footer>
+</body>
+</html>

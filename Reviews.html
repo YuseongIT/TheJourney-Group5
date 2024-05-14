@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Review Our Website</title>
+ <link rel="stylesheet" type="text/css" href="Reviews.css">
+ <link rel="icon" type="image/x-icon" href="Images/Ridgeside_Icon.png">
+ <!--Rowdies Font-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<!--Rowdies Font-->
+
+<!--Ubuntu Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!--Ubuntu Font-->
+
+<!--Javascript-->
+<script>
+ function addReview(event) {
+     event.preventDefault();
+   
+     const reviewerName = document.getElementById('reviewerName').value;
+     const reviewText = document.getElementById('reviewText').value;
+     const starRating = document.getElementById('starRating').value;
+   
+     const reviewHTML = `
+         <div class="review">
+             <p class="reviewer-name">${reviewerName}</p>
+             <p class="stars">${getStars(starRating)}</p>
+             <p class="review-date">${getCurrentDate()}</p>
+             <hr style="width: 98%;margin: auto; margin-bottom: 30px;margin-top: 30px;filter: brightness(190%);">
+             <p class="text">${reviewText}</p>
+         </div>
+     `;
+  
+     const reviewList = document.getElementById('reviewList');
+   
+     reviewList.insertAdjacentHTML('beforeend', reviewHTML);
+   
+     document.getElementById('reviewerName').value = '';
+     document.getElementById('reviewText').value = '';
+     document.getElementById('starRating').selectedIndex = 0;
+ }
+
+ function getCurrentDate() {
+     const options = { month: 'long', day: 'numeric', year: 'numeric' };
+     return new Date().toLocaleDateString('en-US', options);
+ }
+
+ function getStars(numStars) {
+     return '⭐️'.repeat(numStars);
+ }
+</script>
+<!--Javascript-->
+
+
+</head>
+<header>
+ <div>
+     <img id="Logo" src="Images/RidgesideHeaderLogo.png" alt="Website Icon">
+ </div>
+
+ <nav>
+  <a style="padding: 35px;padding-top: 35px; padding-bottom: 35px" href="index.html">HOME</a>
+  <a style="padding-top: 35px; padding-bottom: 36px" href="Locations.html">LOCATIONS</a>
+  <a style="padding-top: 35px; padding-bottom: 36px" href="RulesAndReg.html">RULES AND REGULATIONS</a>
+  <a style="padding-top: 35px; padding-bottom: 36px" href="Community.html">COMMUNITY</a>
+  <a id="main" style="padding-top: 35px; padding-bottom: 36px" href="Reviews.html">REVIEWS</a>
+  <a style="padding-top: 35px; padding-bottom: 36px" href="AboutUs.html">ABOUT US</a>
+ </nav>
+</header>
+
+
+<div class="review-container">
+ <h1 class="review-label">Leave Our Website A Review!</h1>
+
+ <!-- Review Form -->
+ <form class="review-form" onsubmit="addReview(event)">
+     <input type="text" id="reviewerName" class="form-input" placeholder="Name" required>
+     <textarea id="reviewText" class="form-input form-input-textarea" placeholder="Tell us about The Journey..." required></textarea>
+     <div>
+        <br>
+         <label for="starRating">Rate Your Experience:</label>
+         <br>
+         <br>
+         <select id="starRating" class="form-input">
+             <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+             <option value="4">⭐️⭐️⭐️⭐️</option>
+             <option value="3">⭐️⭐️⭐️</option>
+             <option value="2">⭐️⭐️</option>
+             <option value="1">⭐️</option>
+         </select>
+     </div>
+     <br>
+     <button type="submit" class="submit-btn">Submit Review</button>
+ </form>
+
+ <!-- Review List -->
+ <div id="reviewList" class="review-list"></div>
+</div>
+
+
+<div class="review-container2">
+  <h1 class="review-label">Feel free to give our website your feedback!</h1>
+  <img class="survey" src="frame.png">
+</div>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+ 
+    <img id="WebsiteFooter" src="Images/RidgesideFooterLogo.png">
+ 
+    <p class="footer-links">
+      <a  style=" color:aliceblue" href="index.html">Home</a>
+      <a  style=" color:aliceblue" href="Locations.html">Locations</a>
+      <a  style=" color:aliceblue" href="RulesAndReg.html">Rules and Regulations</a>
+      <a  style=" color:aliceblue" href="Community.html">Community Board</a>
+      <a  style=" color:aliceblue" href="Reviews.html">Reviews</a>
+      <a  style=" color:aliceblue" href="AboutUs.html">About Us</a>
+    </p>
+ 
+    <p class="quicknavi">Quick Navigation</p>
+  </div>
+ 
+  <div class="footer-center">
+ 
+    <div>
+      <i class="location"></i>
+      <p><span>Technological Institute of the Philippines</span> Manila City, Philippines</p>
+    </div>
+ 
+    <div>
+      <i class="phone"></i>
+      <p>+63 920 464 5310</p>
+    </div>
+ 
+    <div>
+      <i class="email"></i>
+      <p><a href="index.html" target="_blank">@thejourneyph.com</a></p>
+    </div>
+ 
+    <div class="footer-icons">
+      <a href="https://facebook.com" target="_blank"><img src="Images/Facebook.png"></a>
+      <a href="https://www.x.com" target="_blank"><img src="Images/TwitterLogo.png"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="Images/InstagramLogo.png"></a>
+      <a href="https://youtube.com" target="_blank"><img src="Images/YoutubeLogo.png"></a>
+    </div>
+ 
+  </div>
+ 
+  <div class="footer-right">
+ 
+    <p class="about">
+      <span>About The Journey Website</span>
+      This website was created as a Finals project for the Human Computer Interaction (HCI) course by students of IT12S1 - 
+      John Ivan Roxas, Nikolai Ng, Daniel Espela, Gabriel Jelo Galang, and Clark Guin Barrientos. </p> <br> 
+    <p style="color:  #92999f; font-size: 15px; font-weight: lighter;">This website serves solely as a demonstration of our interface design skills and to inform people about the available resorts in the Philippines.</p>
+ 
+  </div>
+ 
+ </footer>
+</body>
