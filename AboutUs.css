@@ -502,7 +502,7 @@ color:white;
    height: 270px;
    width: 270px;
 }
-.Profile-info h4{
+.Profile-info h4, a{
    font-size: 25px;
    text-align: center;
    font-family: Rowdies;
